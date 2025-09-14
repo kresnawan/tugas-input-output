@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Flowchart"/>
+        <attribute name="authors" value="Kris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-15 05:15:46 AM"/>
+        <attribute name="created" value="S3JpcztMQVBUT1AtMVJCQkNVQ087MjAyNS0wOS0xNTswNTowNjoyNyBBTTsyNzUy"/>
+        <attribute name="edited" value="S3JpcztMQVBUT1AtMVJCQkNVQ087MjAyNS0wOS0xNTswNToxNTo0NiBBTTsxOzI4NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gravitasi" type="Integer" array="False" size=""/>
+            <declare name="massa" type="Integer" array="False" size=""/>
+            <declare name="kecepatan" type="Integer" array="False" size=""/>
+            <declare name="ketinggian" type="Integer" array="False" size=""/>
+            <declare name="energiPotensial" type="Integer" array="False" size=""/>
+            <declare name="energiKinetik" type="Integer" array="False" size=""/>
+            <declare name="energiMekanik" type="Integer" array="False" size=""/>
+            <assign variable="gravitasi" expression="10"/>
+            <output expression="&quot;Program menghitung Energi potensial, energi kinetik, dan energi mekanik&quot;" newline="True"/>
+            <output expression="&quot;Masukkan massa benda (kg)&quot;" newline="True"/>
+            <input variable="massa"/>
+            <output expression="&quot;Masukkan kecepatan benda (m/s2)&quot;" newline="True"/>
+            <input variable="kecepatan"/>
+            <output expression="&quot;Masukkan ketinggian benda (m)&quot;" newline="True"/>
+            <input variable="ketinggian"/>
+            <assign variable="energiPotensial" expression="massa * gravitasi * ketinggian"/>
+            <assign variable="energiKinetik" expression="0.5 * massa * (kecepatan * kecepatan)"/>
+            <assign variable="energiMekanik" expression="energiPotensial + energiKinetik"/>
+            <output expression="&quot;Energi potensial = &quot; &amp; energiPotensial &amp; &quot; Joule&quot;" newline="True"/>
+            <output expression="&quot;Energi kinetik = &quot; &amp; energiKinetik &amp; &quot; Joule&quot;" newline="True"/>
+            <output expression="&quot;Energi mekanik = &quot; &amp; energiMekanik &amp; &quot; Joule&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
